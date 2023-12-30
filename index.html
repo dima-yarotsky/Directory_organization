@@ -4,6 +4,19 @@
     <meta charset="UTF-8">
     <title>Справочник организаций</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        /* Скрыть текстовые ссылки на странице */
+        .text-links {
+            display: none;
+        }
+
+        /* Отобразить текстовые ссылки при печати */
+        @media print {
+            .text-links {
+                display: block;
+            }
+        }
+    </style>
 </head>
 <body>
 <h1>Справочник организаций</h1>
@@ -19,6 +32,7 @@
 </ul>
 <div class="empty-line"></div>
 <a href="organization.php" class="btn">Показать все организации</a>
+<a href="login.php" class="btn">Вход для администратора</a>
 
 <script src="script.js"></script>
 </body>
